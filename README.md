@@ -32,6 +32,7 @@ YourBookProject/              # Root project directory
 ├── Manuscript/                # Generated output files
 └── book-memory-bank/          # Memory bank files (context only)
     ├── README.md              # Memory bank documentation (this file)   
+    |── system_prompt.md       # Suggested system prompt - in Cline, go to Settings and paste the content of that into "Custom Prompt" 
     ├── custom_instructions.md  # AI assistant instructions   
     ├── memory_update_prompts.md # Pre-written prompts for updates
     │
@@ -193,7 +194,7 @@ The system supports three primary workflows:
    - Begin in Plan Mode to establish basic story elements
    - Your first prompt will be "initialize memory bank". This will create and update memory banks files, to get started
    - Describe what you want to write. Make the first line meaningful, as that's what will show up in Clines history. 
-   - Add detail - at any level you want. You can start with a basic description and then iterate - or add as much detail as you want. This might include main character(s), 1st or 3rd perspective, tone, plot points, locations, et al.
+   - Add detail - at any level you want. You can start with a basic description and then iterate - or add as much detail as you want. This might include main character(s), 1st or 3rd perspective, tone, plot points, locations, et al.  It's recommend to set the over all style of the book. For example, "Write this book in the style of Ernest Hemingway" - or "Write this book with a style of minimalist and direct, using simple language, short sentences, and subtle implication to convey deep meaning through action and dialogue" (which somewhat equates to how Hemingway wrote)
    - Answer any questions given to you.
 
 4. **Writing Process**:
