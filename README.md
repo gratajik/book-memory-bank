@@ -27,16 +27,13 @@ YourBookProject/              # Root project directory
 │   ├── Master_Outline.md
 │   └── Chapter_Outlines/
 │       └── Chapter01_Outline.md
+|── AI Generation/             # ACTUAL AI Generation
+│   ├── cover_prompts.md       # ACTUAL cover prompts   
 ├── Manuscript/                # Generated output files
 └── book-memory-bank/          # Memory bank files (context only)
-    ├── README.md              # Memory bank documentation (this file)
-    ├── memory_bank_workflow.md # How to use the memory bank
-    ├── custom_instructions.md  # AI assistant instructions
-    ├── llm_memory_updating_guide.md # Guide for automated memory updates
+    ├── README.md              # Memory bank documentation (this file)   
+    ├── custom_instructions.md  # AI assistant instructions   
     ├── memory_update_prompts.md # Pre-written prompts for updates
-    ├── memory_auto_update_quickstart.md # Quick start for auto updates
-    ├── auto_memory_workflow.md  # Automated workflow guide
-    ├── cline_memory_auto_instructions.md # Instructions for auto updates
     │
     ├── Core/                   # Core story documentation
     │   ├── projectbrief.md     # Core project definition
@@ -45,9 +42,7 @@ YourBookProject/              # Root project directory
     │   ├── worldContext.md     # Worldbuilding elements
     │   ├── activeContext.md    # Current work status
     │   ├── progress.md         # Completion tracking
-    │   └── character_profiles.md # Character development and tracking
-    │
-    ├── Characters/             # Character development directory (placeholder)
+    │   └── character_profiles.md # Character development and tracking    
     │
     ├── Core/Templates/         # Template files for new content
     │   ├── README.md           # Guide to using templates
@@ -63,14 +58,9 @@ YourBookProject/              # Root project directory
         ├── AI_Generation/      # AI prompt templates
         │   └── cover_prompts.md # Instructions for AI cover generation
         │
-        ├── Publishing/         # Publication resources
-        │   ├── revision_checklist.md # Systematic review guidelines
-        │   ├── marketing_plan.md # Book marketing strategies
-        │   └── kdp_publishing_guide.md # Publishing instructions
         │
         └── Scripts/            # Automation tools
-            ├── combine_chapters.ps1 # Merge chapters into one document
-            ├── extract_chapter_information.ps1 # Extract data from chapters
+            ├── combine_chapters.ps1 # Merge chapters into one document            
             ├── generate_docx.bat # Create Word document
             └── prepare_word_template.ps1 # Setup Word formatting
 ```
@@ -118,6 +108,18 @@ This approach leverages Cline's file access to completely automate the memory ba
 
 With specially crafted prompts, you can trigger automatic memory bank updates for both completed chapters and outlines:
 
+
+### Basic full update
+
+Most of the time you will just ask to update memory bank  this should pick up all changes and update the correct files.  If this is not working, you can use the other Automatic Content Analysis Prompts
+
+```
+
+update memory bank
+
+```
+
+
 #### For Completed Chapters:
 ```
 I've just completed Chapter 5: The Revelation. 
@@ -155,12 +157,6 @@ Please perform a comprehensive memory bank consistency check.
 3. Verify that character arcs align with plot developments
 ```
 
-For a complete collection of memory update prompts, see the [Memory Update Prompts](./memory_update_prompts.md) guide.
-
-### Custom Instructions for Automatic Updates
-
-The memory bank includes [enhanced custom instructions](./cline_memory_auto_instructions.md) that configure Cline to automatically monitor for new content and maintain the memory bank without requiring explicit commands.
-
 ## Workflow Guide
 
 The system supports three primary workflows:
@@ -178,16 +174,13 @@ The system supports three primary workflows:
 4. Continue with the next chapter based on the updated memory bank
 
 ### Publishing Preparation Workflow
-1. Use Production/Publishing/revision_checklist.md to systematically review the manuscript
-2. Run Production/Scripts/combine_chapters.ps1 to assemble the complete book
-3. Use Production/Scripts/generate_docx.bat to create a properly formatted Word document
-4. Follow Production/Publishing/kdp_publishing_guide.md for publication steps
+1. Run Production/Scripts/combine_chapters.ps1 to assemble the complete book
+2. Use Production/Scripts/generate_docx.bat to create a properly formatted Word document
 
 ## Getting Started
 
 1. **Set up the Project Structure**:
    - Copy the book-memory-bank folder to your project directory
-   - Create the Chapters/, Outlines/ and Manuscript/ directories
    - Create .clinerules file with content from custom_instructions.md
    - Ensure all paths in the .clinerules file include "book-memory-bank/" prefix
 
@@ -198,19 +191,28 @@ The system supports three primary workflows:
 
 3. **Start Your Project**:
    - Begin in Plan Mode to establish basic story elements
-   - Populate book-memory-bank/Core/projectbrief.md and related core files
-   - Develop character profiles and master outline
-   - Create chapter outlines in the Outlines/ directory
+   - Your first prompt will be "initialize memory bank". This will create and update memory banks files, to get started
+   - Describe what you want to write. Make the first line meaningful, as that's what will show up in Clines history. 
+   - Add detail - at any level you want. You can start with a basic description and then iterate - or add as much detail as you want. This might include main character(s), 1st or 3rd perspective, tone, plot points, locations, et al.
+   - Answer any questions given to you.
 
 4. **Writing Process**:
-   - Write chapters in the Chapters/ directory using the LLM for assistance
-   - After each chapter, simply tell Cline: "I've completed Chapter X. Please update the memory bank."
-   - Review Cline's summary of automatic updates
-   - Continue writing with Cline's assistance, leveraging the updated memory bank
+   - Once you are ready to start writing the book, writing to Act mode.
+   - Tell Cline to "update memory bank".  This should fully create the memory bank files - characters, locations, plots, etc.  
+   - As for the master outline to be written. Review and feedback changes (if needed)
+   - Once the master outline is how you want it, "update memory bank". This will make sure to your start with a updated memory bank
+   - You can iterate how you want at this point. The pattern that seems to work the best:
+      1.  Ask to "Write chapter 1 outline" (or just "Write the next chapter outline).
+      2.  Review and feedback changes
+      3.  Ask to "Write chapter 1" (or just "Write the next chapter).
+      4.  Review and feedback changes
+      5.  Update memory bank
+      6.  Repeat until the book is complete
+   - It's recommend to read and feedback on each chapter as they are written - you can always make major chnages later (by prompting for it!), but it will take a while and can be error-prone
+   - Periodically review all memoiry bank files - if you see a problem, enter a prompt to correct   
 
 5. **Publishing Preparation**:
-   - Run the automation scripts in the Production/Scripts directory to assemble and format your manuscript
-   - Follow the publishing guidelines in Production/Publishing for your chosen platform
+   - Run the automation scripts in the Production/Scripts directory to assemble and format your manuscript   
 
 ## Example Usage
 

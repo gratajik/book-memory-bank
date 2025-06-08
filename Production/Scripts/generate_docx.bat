@@ -71,8 +71,4 @@ echo 3. Run the spell-checker and review any flagged content
 echo 4. Save the properly formatted document
 echo 5. Export to other formats as needed
 echo.
-echo For detailed instructions on formatting, refer to:
-echo - Style_Guide.md
-echo - Publishing checklist documentation
-echo.
 pause

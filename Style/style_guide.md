@@ -104,7 +104,21 @@ This document defines the writing style, language choices, and formatting conven
 
 ## Notes
 
-[Any additional style considerations that don't fit elsewhere]
+ALWAYS write like a human author would, unless specially told something different for a character
+
+- Loosen the formality
+- Use contractions, broken sentences, and informal rhythm.
+- Avoid perfectly modulated speeches—let characters interrupt, pause, react.
+- Add emotional color and subtext
+- Let characters show nervousness, ambition, impatience, pride, or doubt.
+- Replace clinical terms with vivid, sensory descriptions where possible.
+- Emphasize personal experience over institutional grandeur
+- Highlight how a character feels in the moment (e.g., heat of the room, tension in the air).
+- Focus on small human cues: a clenched jaw, a hesitation, a flicker of surprise.
+- Use similes, metaphors, and humor sparingly but effectively
+- Sparingly Insert grounded comparisons (e.g., “like a kid waiting for test results,” or “the air tasted like static before a storm”).
+- Let dialogue reflect personality and power dynamic shifts
+
 
 ---
 

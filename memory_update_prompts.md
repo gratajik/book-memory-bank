@@ -4,6 +4,17 @@ This document provides ready-to-use prompts that instruct Cline to automatically
 
 ## Automatic Content Analysis Prompts
 
+### 
+
+In theory, after major updates (new outline or chapter), the various changes should be updated in the the correct memory  bank files. This does not alway work. You can instead use this manual prompt
+Most of the time you will just ask to update memory bank  this should pick up all changes and update the correct files.  If this is not working, you can use the other Automatic Content Analysis Prompts
+
+```
+
+update memory bank
+
+```
+
 ### After Completing a Chapter
 
 ```
