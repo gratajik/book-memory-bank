@@ -13,6 +13,44 @@ The Book Memory Bank is designed to solve a key challenge when writing books wit
 5. **Custom instructions** for LLM assistants
 6. **Conversational memory updating** that eliminates the need for scripts
 
+## Getting Started
+
+1. **Set up the Project Structure**:
+   - Copy the book-memory-bank folder to your project directory
+   - Create .clinerules file with content from custom_instructions.md
+   - Go to Settings and paste the content of that into "Custom Prompt" 
+   - Ensure all paths in the .clinerules file include "book-memory-bank/" prefix
+
+2. **Configure AI Assistant**:
+   - Copy the contents of custom_instructions.md to your LLM's custom instructions
+   - Ensure file paths in custom instructions include "book-memory-bank/" prefix
+   - Open VSCode in your main project directory
+
+3. **Start Your Project**:
+   - Begin in Plan Mode to establish basic story elements
+   - Your first prompt will be "initialize memory bank". This will create and update memory banks files, to get started
+   - Describe what you want to write. Make the first line meaningful, as that's what will show up in Clines history. 
+   - Add detail - at any level you want. You can start with a basic description and then iterate - or add as much detail as you want. This might include main character(s), 1st or 3rd perspective, tone, plot points, locations, et al.  It's recommend to set the over all style of the book. For example, "Write this book in the style of Ernest Hemingway" - or "Write this book with a style of minimalist and direct, using simple language, short sentences, and subtle implication to convey deep meaning through action and dialogue" (which somewhat equates to how Hemingway wrote)
+   - Answer any questions given to you.
+
+4. **Writing Process**:
+   - Once you are ready to start writing the book, writing to Act mode.
+   - Tell Cline to "update memory bank".  This should fully create the memory bank files - characters, locations, plots, etc.  
+   - As for the master outline to be written. Review and feedback changes (if needed)
+   - Once the master outline is how you want it, "update memory bank". This will make sure to your start with a updated memory bank
+   - You can iterate how you want at this point. The pattern that seems to work the best:
+      1.  Ask to "Write chapter 1 outline" (or just "Write the next chapter outline).
+      2.  Review and feedback changes
+      3.  Ask to "Write chapter 1" (or just "Write the next chapter).
+      4.  Review and feedback changes
+      5.  Update memory bank
+      6.  Repeat until the book is complete
+   - It's recommend to read and feedback on each chapter as they are written - you can always make major chnages later (by prompting for it!), but it will take a while and can be error-prone
+   - Periodically review all memoiry bank files - if you see a problem, enter a prompt to correct   
+
+5. **Publishing Preparation**:
+   - Run the automation scripts in the Production/Scripts directory to assemble and format your manuscript   
+
 ## Complete Project Structure
 
 The recommended project structure separates the memory bank (metadata and context) from the actual book content:
@@ -112,7 +150,7 @@ With specially crafted prompts, you can trigger automatic memory bank updates fo
 
 ### Basic full update
 
-Most of the time you will just ask to update memory bank  this should pick up all changes and update the correct files.  If this is not working, you can use the other Automatic Content Analysis Prompts
+Most of the time you will just ask to update memory bank - this should pick up all changes and update the correct files.  If this is not working, you can use the other Automatic Content Analysis Prompts - the most used will be update:
 
 ```
 
@@ -177,43 +215,6 @@ The system supports three primary workflows:
 ### Publishing Preparation Workflow
 1. Run Production/Scripts/combine_chapters.ps1 to assemble the complete book
 2. Use Production/Scripts/generate_docx.bat to create a properly formatted Word document
-
-## Getting Started
-
-1. **Set up the Project Structure**:
-   - Copy the book-memory-bank folder to your project directory
-   - Create .clinerules file with content from custom_instructions.md
-   - Ensure all paths in the .clinerules file include "book-memory-bank/" prefix
-
-2. **Configure AI Assistant**:
-   - Copy the contents of custom_instructions.md to your LLM's custom instructions
-   - Ensure file paths in custom instructions include "book-memory-bank/" prefix
-   - Open VSCode in your main project directory
-
-3. **Start Your Project**:
-   - Begin in Plan Mode to establish basic story elements
-   - Your first prompt will be "initialize memory bank". This will create and update memory banks files, to get started
-   - Describe what you want to write. Make the first line meaningful, as that's what will show up in Clines history. 
-   - Add detail - at any level you want. You can start with a basic description and then iterate - or add as much detail as you want. This might include main character(s), 1st or 3rd perspective, tone, plot points, locations, et al.  It's recommend to set the over all style of the book. For example, "Write this book in the style of Ernest Hemingway" - or "Write this book with a style of minimalist and direct, using simple language, short sentences, and subtle implication to convey deep meaning through action and dialogue" (which somewhat equates to how Hemingway wrote)
-   - Answer any questions given to you.
-
-4. **Writing Process**:
-   - Once you are ready to start writing the book, writing to Act mode.
-   - Tell Cline to "update memory bank".  This should fully create the memory bank files - characters, locations, plots, etc.  
-   - As for the master outline to be written. Review and feedback changes (if needed)
-   - Once the master outline is how you want it, "update memory bank". This will make sure to your start with a updated memory bank
-   - You can iterate how you want at this point. The pattern that seems to work the best:
-      1.  Ask to "Write chapter 1 outline" (or just "Write the next chapter outline).
-      2.  Review and feedback changes
-      3.  Ask to "Write chapter 1" (or just "Write the next chapter).
-      4.  Review and feedback changes
-      5.  Update memory bank
-      6.  Repeat until the book is complete
-   - It's recommend to read and feedback on each chapter as they are written - you can always make major chnages later (by prompting for it!), but it will take a while and can be error-prone
-   - Periodically review all memoiry bank files - if you see a problem, enter a prompt to correct   
-
-5. **Publishing Preparation**:
-   - Run the automation scripts in the Production/Scripts directory to assemble and format your manuscript   
 
 ## Example Usage
 
