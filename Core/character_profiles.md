@@ -16,6 +16,8 @@ This document provides templates and examples for creating detailed character pr
 
 **Occupation**: [Current job or role]
 
+**Style**: [The style of speech and word choice they use]
+
 ### Background
 
 **Family Background**: [Parents, siblings, marital status, children, etc.]

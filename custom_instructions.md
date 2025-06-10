@@ -66,6 +66,10 @@ Specialized files:
 
 ## Workflow in Plan and Act Modes
 
+### All modes
+1. If the memory bank files have not been created yet, do so.  While each file has a suggested template, you are free - and encouraged - to improve as you see fit. 
+2. Before writing anything, you will alway use style_guide.md and narrativePatterns.md 
+
 ### Plan Mode
 1. Read ALL Memory Bank files
 2. Check if files are complete

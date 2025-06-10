@@ -18,8 +18,7 @@ The Book Memory Bank is designed to solve a key challenge when writing books wit
 1. **Set up the Project Structure**:
    - Copy the book-memory-bank folder to your project directory
    - Create .clinerules file with content from custom_instructions.md
-   - Go to Settings and paste the content of that into "Custom Prompt" 
-   - Ensure all paths in the .clinerules file include "book-memory-bank/" prefix
+   - Go to Settings and paste the content of that into "Custom Prompt"    
 
 2. **Configure AI Assistant**:
    - Copy the contents of custom_instructions.md to your LLM's custom instructions
@@ -27,14 +26,15 @@ The Book Memory Bank is designed to solve a key challenge when writing books wit
    - Open VSCode in your main project directory
 
 3. **Start Your Project**:
-   - Begin in Plan Mode to establish basic story elements
-   - Your first prompt will be "initialize memory bank". This will create and update memory banks files, to get started
+   - Begin in Plan Mode to establish basic story elements   
    - Describe what you want to write. Make the first line meaningful, as that's what will show up in Clines history. 
    - Add detail - at any level you want. You can start with a basic description and then iterate - or add as much detail as you want. This might include main character(s), 1st or 3rd perspective, tone, plot points, locations, et al.  It's recommend to set the over all style of the book. For example, "Write this book in the style of Ernest Hemingway" - or "Write this book with a style of minimalist and direct, using simple language, short sentences, and subtle implication to convey deep meaning through action and dialogue" (which somewhat equates to how Hemingway wrote)
    - Answer any questions given to you.
+   - Enter in the prompt "initialize memory bank". This will get the memory bank read 
 
 4. **Writing Process**:
    - Once you are ready to start writing the book, writing to Act mode.
+   - It will likely write some. 
    - Tell Cline to "update memory bank".  This should fully create the memory bank files - characters, locations, plots, etc.  
    - As for the master outline to be written. Review and feedback changes (if needed)
    - Once the master outline is how you want it, "update memory bank". This will make sure to your start with a updated memory bank
@@ -71,8 +71,7 @@ YourBookProject/              # Root project directory
 └── book-memory-bank/          # Memory bank files (context only)
     ├── README.md              # Memory bank documentation (this file)   
     |── system_prompt.md       # Suggested system prompt - in Cline, go to Settings and paste the content of that into "Custom Prompt" 
-    ├── custom_instructions.md  # AI assistant instructions   
-    ├── memory_update_prompts.md # Pre-written prompts for updates
+    ├── custom_instructions.md  # AI assistant instructions     
     │
     ├── Core/                   # Core story documentation
     │   ├── projectbrief.md     # Core project definition
