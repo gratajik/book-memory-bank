@@ -18,7 +18,7 @@ The Book Memory Bank is designed to solve a key challenge when writing books wit
 1. **Set up the Project Structure**:
    - Copy the book-memory-bank folder to your project directory
    - Create .clinerules file with content from custom_instructions.md
-   - Go to Settings and paste the content of that into "Custom Prompt"    
+   - Go to Settings and paste the content of system_prompt.md that into "Custom Prompt"    
 
 2. **Configure AI Assistant**:
    - Copy the contents of custom_instructions.md to your LLM's custom instructions
