@@ -44,7 +44,7 @@ function Create-WordTemplate {
     $titleStyle.ParagraphFormat.Alignment = 1  # Center aligned
     $titleStyle.ParagraphFormat.SpaceAfter = 24  # Space after in points
     
-    # Heading 1 (Chapter Titles)
+    # Heading 1 (Chapter Titles) - Always start on new page
     $h1Style = $doc.Styles.Item("Heading 1")
     $h1Style.Font.Name = $titleFont
     $h1Style.Font.Size = $headingBaseSize + 4  # 20pt
@@ -52,6 +52,7 @@ function Create-WordTemplate {
     $h1Style.ParagraphFormat.Alignment = 1  # Center aligned
     $h1Style.ParagraphFormat.SpaceAfter = 24  # Space after in points
     $h1Style.ParagraphFormat.SpaceBefore = 36  # Space before in points
+    $h1Style.ParagraphFormat.PageBreakBefore = $true  # Start chapter on new page
     
     # Heading 2 (Section Headings)
     $h2Style = $doc.Styles.Item("Heading 2")
@@ -78,6 +79,7 @@ function Create-WordTemplate {
     $normalStyle.ParagraphFormat.LineSpacing = $lineSpacing * 12  # Convert to points
     $normalStyle.ParagraphFormat.SpaceAfter = 8
     $normalStyle.ParagraphFormat.FirstLineIndent = 36  # 0.5 inch indent for paragraphs
+    $normalStyle.ParagraphFormat.Alignment = 3  # Justified text (3 = wdAlignParagraphJustify)
     
     # Blockquote
     try {
