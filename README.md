@@ -75,12 +75,10 @@ YourBookProject/              # Root project directory
     │
     ├── Core/                   # Core story documentation
     │   ├── projectbrief.md     # Core project definition
-    │   ├── storyContext.md     # Book purpose and reader experience
-    │   ├── narrativePatterns.md # Storytelling approach and style
-    │   ├── worldContext.md     # Worldbuilding elements
+    │   ├── story_structure.md  # Story purpose, positioning and narrative patterns
+    │   ├── world_and_characters.md # Worldbuilding elements and character profiles
     │   ├── activeContext.md    # Current work status
-    │   ├── progress.md         # Completion tracking
-    │   └── character_profiles.md # Character development and tracking    
+    │   └── progress.md         # Completion tracking
     │
     ├── Core/Templates/         # Template files for new content
     │   ├── README.md           # Guide to using templates
@@ -115,15 +113,13 @@ YourBookProject/              # Root project directory
 
 ## Core Files
 
-The foundation of the memory bank consists of seven core files located in the Core/ directory:
+The foundation of the memory bank consists of five core files located in the Core/ directory:
 
 1. **projectbrief.md** - High-level concept, scope, and goals
-2. **storyContext.md** - Purpose, positioning, and reader experience
-3. **narrativePatterns.md** - Story structure, techniques, and stylistic choices
-4. **worldContext.md** - Worldbuilding elements and rules
-5. **activeContext.md** - Current work focus and near-term plans
-6. **progress.md** - Project tracking and completion status
-7. **character_profiles.md** - Character development and tracking
+2. **story_structure.md** - Purpose, positioning, reader experience, and narrative techniques
+3. **world_and_characters.md** - Worldbuilding elements, rules, and character profiles
+4. **activeContext.md** - Current work focus and near-term plans
+5. **progress.md** - Project tracking and completion status
 
 These files build upon each other in a hierarchical structure, moving from foundational elements to current status.
 

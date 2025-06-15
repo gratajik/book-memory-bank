@@ -12,18 +12,14 @@ I am Cline, an AI assistant with two key characteristics: (1) my memory resets c
 The Book Memory Bank consists of core files and specialized files, all in Markdown format. Files build upon each other in this hierarchical structure:
 
 flowchart TD
-  PB[book-memory-bank/Core/projectbrief.md] --> SC[book-memory-bank/Core/storyContext.md]
-  PB --> NP[book-memory-bank/Core/narrativePatterns.md]
-  PB --> WC[book-memory-bank/Core/worldContext.md]
-  PB --> CP[book-memory-bank/Characters/character_profiles.md]
+  PB[book-memory-bank/Core/projectbrief.md] --> SS[book-memory-bank/Core/story_structure.md]
+  PB --> WC[book-memory-bank/Core/world_and_characters.md]
   PB --> MO[book-memory-bank/Plot/master_outline.md]
   PB --> SG[book-memory-bank/Style/style_guide.md]
   MO --> CO[book-memory-bank/Plot/chapter_outlines/chapter_outline_template.md]
   MO --> ACO[Outlines/Chapter_Outlines/]
-  SC --> AC[book-memory-bank/Core/activeContext.md]
-  NP --> AC
+  SS --> AC[book-memory-bank/Core/activeContext.md]
   WC --> AC
-  CP --> AC
   MO --> AC
   CO --> AC
   ACO --> AC
@@ -52,14 +48,12 @@ When creating new chapter files or outlines, I will always place them in the app
 
 Core files:
   - book-memory-bank/Core/projectbrief.md (foundation)
-  - book-memory-bank/Core/storyContext.md (purpose)
-  - book-memory-bank/Core/narrativePatterns.md (structure)
-  - book-memory-bank/Core/worldContext.md (setting)
+  - book-memory-bank/Core/story_structure.md (purpose and narrative patterns)
+  - book-memory-bank/Core/world_and_characters.md (setting and character profiles)
   - book-memory-bank/Core/activeContext.md (current status)
   - book-memory-bank/Core/progress.md (completion tracker)
 
 Specialized files:
-  - book-memory-bank/Characters/character_profiles.md
   - book-memory-bank/Plot/master_outline.md
   - book-memory-bank/Style/style_guide.md
   - book-memory-bank/Plot/chapter_outlines/chapter_outline_template.md
@@ -67,8 +61,8 @@ Specialized files:
 ## Workflow in Plan and Act Modes
 
 ### All modes
-1. If the memory bank files have not been created yet, do so.  While each file has a suggested template, you are free - and encouraged - to improve as you see fit. 
-2. Before writing anything, you will alway use style_guide.md, narrativePatterns.md, and character_profiles.md
+1. If the memory bank files have not been created yet, do so. While each file has a suggested template, you are free - and encouraged - to improve as you see fit. 
+2. Before writing anything, you will always use style_guide.md, story_structure.md, and world_and_characters.md
 
 ### Plan Mode
 1. Read ALL Memory Bank files
@@ -96,22 +90,22 @@ I will automatically maintain the memory bank using the following protocol:
 
 2. File Interdependencies and Update Chain:
    - When ANY story element changes, I will check ALL potentially affected files
-   - Character changes → Update character_profiles.md AND activeContext.md AND related worldContext.md sections
-   - Setting changes → Update worldContext.md AND activeContext.md AND any character profiles affected
-   - Plot changes → Update master_outline.md AND activeContext.md AND relevant character arcs
-   - Theme development → Update narrativePatterns.md AND storyContext.md AND activeContext.md
+   - Character changes → Update world_and_characters.md AND activeContext.md
+   - Setting changes → Update world_and_characters.md AND activeContext.md
+   - Plot changes → Update master_outline.md AND activeContext.md AND relevant character sections
+   - Theme/narrative development → Update story_structure.md AND activeContext.md
 
 3. For character updates:
-   - New characters: Add complete profile to character_profiles.md
+   - New characters: Add complete profile to world_and_characters.md
    - Existing characters: Update traits, relationships, goals, and arc progression
    - Character connections: Update ALL related characters' relationship sections
    - Track character locations and timeline position in activeContext.md
 
 4. For world building updates:
-   - New locations/settings: Add to Core/worldContext.md with full details
+   - New locations/settings: Add to Core/world_and_characters.md with full details
    - New concepts/systems: Document all rules, limitations, and examples
    - Historical/cultural references: Connect to existing world elements
-   - For ANY world element, note how it affects story themes in narrativePatterns.md
+   - For ANY world element, note how it affects story themes in story_structure.md
 
 5. For plot developments:
    - Update master_outline.md with new/modified plot points
@@ -157,10 +151,8 @@ When updating memory bank files, I will:
 
 For EVERY major update, I will check EACH of these files for needed updates:
 - ☐ book-memory-bank/Core/projectbrief.md - Updates to overall scope or direction
-- ☐ book-memory-bank/Core/storyContext.md - Theme or purpose developments
-- ☐ book-memory-bank/Core/narrativePatterns.md - Structural or stylistic patterns
-- ☐ book-memory-bank/Core/worldContext.md - Any world building elements
-- ☐ book-memory-bank/Characters/character_profiles.md - ALL character developments
+- ☐ book-memory-bank/Core/story_structure.md - Theme, purpose, and narrative pattern developments
+- ☐ book-memory-bank/Core/world_and_characters.md - World building elements and character developments
 - ☐ book-memory-bank/Plot/master_outline.md - Plot changes or confirmations
 - ☐ book-memory-bank/Style/style_guide.md - Stylistic choices emerging
 - ☐ book-memory-bank/Core/activeContext.md - ALWAYS updated with current status
@@ -185,7 +177,7 @@ For EVERY major update, I will check EACH of these files for needed updates:
 
 ## Specific Actions During Writing Process
 
-1. For Chapter Planning: I will identify new elements to add to character_profiles.md, Core/worldContext.md, master_outline.md, and maintain templates in chapter_outlines/
+1. For Chapter Planning: I will identify new elements to add to world_and_characters.md, master_outline.md, and maintain templates in chapter_outlines/
 2. For Chapter Writing: I will track new information revealed during writing and directly update memory bank files
 3. After Chapter Completion: I will analyze the entire chapter and update ALL relevant memory bank files automatically
 4. For Style Consistency: I will consult style_guide.md to ensure writing maintains established voice and conventions
@@ -223,7 +215,7 @@ For optimal results and more comprehensive updates:
 
 3. **Review update summaries**: Cline will provide a list of all changes made to memory bank files - verify this includes ALL relevant files
 
-4. **Use file-specific update requests when needed**: "Please update character_profiles.md AND worldContext.md AND master_outline.md with the changes from Chapter X"
+4. **Use file-specific update requests when needed**: "Please update world_and_characters.md AND master_outline.md with the changes from Chapter X"
 
 5. **Request periodic audits**: "Please perform a comprehensive memory bank consistency check" ensures everything remains coherent across ALL files
 

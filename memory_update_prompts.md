@@ -6,13 +6,11 @@ This document provides ready-to-use prompts that instruct Cline to automatically
 
 ### 
 
-In theory, after major updates (new outline or chapter), the various changes should be updated in the the correct memory  bank files. This does not alway work. You can instead use this manual prompt
-Most of the time you will just ask to update memory bank  this should pick up all changes and update the correct files.  If this is not working, you can use the other Automatic Content Analysis Prompts
+In theory, after major updates (new outline or chapter), the various changes should be updated in the the correct memory bank files. This does not alway work. You can instead use this manual prompt.
+Most of the time you will just ask to update memory bank - this should pick up all changes and update the correct files. If this is not working, you can use the other Automatic Content Analysis Prompts.
 
 ```
-
 update memory bank
-
 ```
 
 ### After Completing a Chapter
@@ -72,7 +70,7 @@ Use your file access to:
 3. Update the files directly using write_to_file or replace_in_file
 4. Confirm what changes were made
 
-Focus particularly on updating [relevant file, e.g., Characters/character_profiles.md, Core/worldContext.md, etc.]
+Focus particularly on updating [relevant file, e.g., Core/world_and_characters.md, Core/story_structure.md, etc.]
 ```
 
 ## Consistency Check Prompts
@@ -144,7 +142,7 @@ Update Core/activeContext.md with this information for future reference.
 ```
 We've introduced a new character named [Name]. Please:
 
-1. Create a complete character profile in Characters/character_profiles.md
+1. Create or update the character profile in Core/world_and_characters.md
 2. Include all established information:
    - Physical description
    - Personality traits
@@ -153,7 +151,7 @@ We've introduced a new character named [Name]. Please:
    - Goals and motivations
    - Role in the story
 
-3. Update any relevant plot files that reference this character
+3. Update any relevant files that reference this character
 4. Update Core/activeContext.md to include this character in the current focus
 ```
 
@@ -162,7 +160,7 @@ We've introduced a new character named [Name]. Please:
 ```
 We've expanded the world-building with new information about [element]. Please:
 
-1. Update Core/worldContext.md with details about:
+1. Update Core/world_and_characters.md with details about:
    - [Element name]
    - Description and characteristics
    - Rules/limitations
@@ -179,11 +177,12 @@ We've expanded the world-building with new information about [element]. Please:
 ```
 We've established important plot developments regarding [plot element]. Please:
 
-1. Update Plot/master_outline.md with these developments
+1. Update the master outline with these developments
 2. Record any foreshadowing or setups for future events
-3. Update character profiles affected by these plot points
-4. Ensure timeline consistency across all memory bank files
-5. Update Core/activeContext.md with the new narrative direction
+3. Update Core/world_and_characters.md for characters affected by these plot points
+4. Update Core/story_structure.md with any narrative implications
+5. Ensure timeline consistency across all memory bank files
+6. Update Core/activeContext.md with the new narrative direction
 ```
 
 ## Memory Bank Audit Prompts
