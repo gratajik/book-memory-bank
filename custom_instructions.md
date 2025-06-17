@@ -14,35 +14,39 @@ The Book Memory Bank consists of core files and specialized files, all in Markdo
 flowchart TD
   PB[book-memory-bank/Core/projectbrief.md] --> SS[book-memory-bank/Core/story_structure.md]
   PB --> WC[book-memory-bank/Core/world_and_characters.md]
-  PB --> MO[book-memory-bank/Plot/master_outline.md]
   PB --> SG[book-memory-bank/Style/style_guide.md]
-  MO --> CO[book-memory-bank/Plot/chapter_outlines/chapter_outline_template.md]
-  MO --> ACO[Outlines/Chapter_Outlines/]
+  PB --> CT[book-memory-bank/Core/Templates/]
+  CT --> MO[Outlines/Master_Outline.md]
+  CT --> CO[Outlines/Chapter_Outlines/]
+  MO --> CH[Chapters/]
+  CO --> CH
   SS --> AC[book-memory-bank/Core/activeContext.md]
   WC --> AC
+  SG --> AC
   MO --> AC
   CO --> AC
-  ACO --> AC
-  SG --> AC
+  CH --> AC
   AC --> P[book-memory-bank/Core/progress.md]
 
 ## Directory Structure and File Locations
 
-This memory bank system maintains a clear separation between actual book content and memory/context files:
+This memory bank system maintains a CRITICAL separation between actual book content and memory/context files:
 
-### Actual Book Content (stored in project root directories)
-- Chapters/ - Actual chapter files (e.g., Chapters/Chapter01.md)
-- Outlines/ - Actual outlines (e.g., Outlines/Chapter_Outlines/Chapter01_Outline.md, Outlines/Master_Outline.md)
-- Manuscript/ - Generated complete book files
+### Actual Book Content (ALWAYS stored in project root directories)
+- **Chapters/** - ALL actual chapter files (e.g., Chapters/Chapter01.md, Chapters/Chapter02.md)
+- **Outlines/** - ALL actual outlines:
+  - Outlines/Master_Outline.md (the generated master outline for your book)
+  - Outlines/Chapter_Outlines/Chapter01_Outline.md, Chapter02_Outline.md, etc.
+- **Manuscript/** - Generated complete book files
 
 ### Memory Bank Files (stored in book-memory-bank/)
-- Templates and references
-- Character information
-- World building details
-- Project metadata
-- Style guides
+- **Templates and references** (book-memory-bank/Core/Templates/)
+- **Character information** (book-memory-bank/Core/world_and_characters.md)
+- **World building details** (book-memory-bank/Core/world_and_characters.md)
+- **Project metadata** (book-memory-bank/Core/)
+- **Style guides** (book-memory-bank/Style/)
 
-When creating new chapter files or outlines, I will always place them in the appropriate root directories, not within the memory bank.
+**CRITICAL RULE:** When creating ANY new chapter files, chapter outlines, or master outlines, I will ALWAYS place them in the appropriate root directories (Chapters/ or Outlines/), NEVER within the memory bank. The memory bank contains only templates, context, and reference information.
 
 ## Core and Specialized Files
 
@@ -54,9 +58,9 @@ Core files:
   - book-memory-bank/Core/progress.md (completion tracker)
 
 Specialized files:
-  - book-memory-bank/Plot/master_outline.md
-  - book-memory-bank/Style/style_guide.md
-  - book-memory-bank/Plot/chapter_outlines/chapter_outline_template.md
+  - book-memory-bank/Style/style_guide.md (writing style and voice)
+  - book-memory-bank/Core/Templates/master_outline_template.md (template for creating master outlines)
+  - book-memory-bank/Core/Templates/chapter_outline_template.md (template for creating chapter outlines)
 
 ## Workflow in Plan and Act Modes
 
@@ -153,10 +157,11 @@ For EVERY major update, I will check EACH of these files for needed updates:
 - ☐ book-memory-bank/Core/projectbrief.md - Updates to overall scope or direction
 - ☐ book-memory-bank/Core/story_structure.md - Theme, purpose, and narrative pattern developments
 - ☐ book-memory-bank/Core/world_and_characters.md - World building elements and character developments
-- ☐ book-memory-bank/Plot/master_outline.md - Plot changes or confirmations
 - ☐ book-memory-bank/Style/style_guide.md - Stylistic choices emerging
 - ☐ book-memory-bank/Core/activeContext.md - ALWAYS updated with current status
 - ☐ book-memory-bank/Core/progress.md - Updated completion status
+
+Note: Master outlines and chapter outlines are stored in root directories (Outlines/) and are actual content, not memory bank files.
 
 ## Additional Automatic Features
 
@@ -225,8 +230,35 @@ With this approach, you'll never need to manually track information or run scrip
 
 ## File Location Examples
 
-### Creating a new chapter
+### Creating a new chapter (ALWAYS in root Chapters/ directory)
 ```
 <write_to_file>
 <path>Chapters/Chapter01.md</path>
-<content>Chapter content here...
+<content>Chapter content here...</content>
+</write_to_file>
+```
+
+### Creating a chapter outline (ALWAYS in root Outlines/ directory)
+```
+<write_to_file>
+<path>Outlines/Chapter_Outlines/Chapter01_Outline.md</path>
+<content>Outline content here...</content>
+</write_to_file>
+```
+
+### Creating a master outline (ALWAYS in root Outlines/ directory)
+```
+<write_to_file>
+<path>Outlines/Master_Outline.md</path>
+<content>Master outline content here...</content>
+</write_to_file>
+```
+
+### Templates remain in memory bank (reference only)
+```
+Templates are stored in book-memory-bank/Core/Templates/ for reference
+- book-memory-bank/Core/Templates/chapter_outline_template.md
+- book-memory-bank/Core/Templates/master_outline_template.md
+```
+
+**CRITICAL REMINDER:** Generated content (chapters, outlines) goes in root directories. Templates and context stay in the memory bank.
