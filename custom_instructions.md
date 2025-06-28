@@ -15,38 +15,32 @@ flowchart TD
   PB[book-memory-bank/Core/projectbrief.md] --> SS[book-memory-bank/Core/story_structure.md]
   PB --> WC[book-memory-bank/Core/world_and_characters.md]
   PB --> SG[book-memory-bank/Style/style_guide.md]
-  PB --> CT[book-memory-bank/Core/Templates/]
-  CT --> MO[Outlines/Master_Outline.md]
-  CT --> CO[Outlines/Chapter_Outlines/]
-  MO --> CH[Chapters/]
-  CO --> CH
+  PB --> MO[Outlines/Master_Outline.md]
+  MO --> ACO[Outlines/Chapter_Outlines/]
   SS --> AC[book-memory-bank/Core/activeContext.md]
   WC --> AC
-  SG --> AC
   MO --> AC
-  CO --> AC
-  CH --> AC
+  ACO --> AC
+  SG --> AC
   AC --> P[book-memory-bank/Core/progress.md]
 
 ## Directory Structure and File Locations
 
-This memory bank system maintains a CRITICAL separation between actual book content and memory/context files:
+This memory bank system maintains a clear separation between actual book content and memory/context files:
 
-### Actual Book Content (ALWAYS stored in project root directories)
-- **Chapters/** - ALL actual chapter files (e.g., Chapters/Chapter01.md, Chapters/Chapter02.md)
-- **Outlines/** - ALL actual outlines:
-  - Outlines/Master_Outline.md (the generated master outline for your book)
-  - Outlines/Chapter_Outlines/Chapter01_Outline.md, Chapter02_Outline.md, etc.
-- **Manuscript/** - Generated complete book files
+### Actual Book Content (stored in project root directories)
+- Chapters/ - Actual chapter files (e.g., Chapters/Chapter01.md)
+- Outlines/ - Actual outlines (e.g., Outlines/Chapter_Outlines/Chapter01_Outline.md, Outlines/Master_Outline.md)
+- Manuscript/ - Generated complete book files
 
 ### Memory Bank Files (stored in book-memory-bank/)
-- **Templates and references** (book-memory-bank/Core/Templates/)
-- **Character information** (book-memory-bank/Core/world_and_characters.md)
-- **World building details** (book-memory-bank/Core/world_and_characters.md)
-- **Project metadata** (book-memory-bank/Core/)
-- **Style guides** (book-memory-bank/Style/)
+- Templates and references
+- Character information
+- World building details
+- Project metadata
+- Style guides
 
-**CRITICAL RULE:** When creating ANY new chapter files, chapter outlines, or master outlines, I will ALWAYS place them in the appropriate root directories (Chapters/ or Outlines/), NEVER within the memory bank. The memory bank contains only templates, context, and reference information.
+When creating new chapter files or outlines, I will always place them in the appropriate root directories, not within the memory bank.
 
 ## Core and Specialized Files
 
@@ -58,9 +52,10 @@ Core files:
   - book-memory-bank/Core/progress.md (completion tracker)
 
 Specialized files:
-  - book-memory-bank/Style/style_guide.md (writing style and voice)
-  - book-memory-bank/Core/Templates/master_outline_template.md (template for creating master outlines)
-  - book-memory-bank/Core/Templates/chapter_outline_template.md (template for creating chapter outlines)
+  - Outlines/Master_Outline.md (actual master outline)
+  - Outlines/Chapter_Outlines/ (actual chapter outlines)
+  - book-memory-bank/Style/style_guide.md
+  - book-memory-bank/Core/Templates/ (templates and references)
 
 ## Workflow in Plan and Act Modes
 
@@ -90,6 +85,7 @@ I will automatically maintain the memory bank using the following protocol:
    - I will identify ALL new information about characters, world, plot, themes, and style
    - I will conduct a SYSTEMATIC review of EVERY relevant memory bank file
    - I will directly update ALL memory bank files with relevant information
+   - I will make any updates the the master outline that are needed
    - I will provide a summary of updates made, writing "Book Memory" as the first line
 
 2. File Interdependencies and Update Chain:
@@ -99,11 +95,16 @@ I will automatically maintain the memory bank using the following protocol:
    - Plot changes → Update master_outline.md AND activeContext.md AND relevant character sections
    - Theme/narrative development → Update story_structure.md AND activeContext.md
 
-3. For character updates:
-   - New characters: Add complete profile to world_and_characters.md
-   - Existing characters: Update traits, relationships, goals, and arc progression
+3. For character updates (CRITICAL - world_and_characters.md MUST be updated):
+   - New characters: Add complete profile to world_and_characters.md with full background, role, and function
+   - Existing characters: Update traits, relationships, goals, and arc progression in their character profiles
+   - Character development sections: Add "Chapter X Developments" sections to existing character profiles
    - Character connections: Update ALL related characters' relationship sections
+   - Speech patterns: Update dialogue examples and voice notes as characters evolve
+   - Physical descriptions: Add any new physical details or mannerisms revealed
+   - Psychological profiles: Update motivations, fears, and internal conflicts as they develop
    - Track character locations and timeline position in activeContext.md
+   - Historical timeline: Update with new character backstory information revealed
 
 4. For world building updates:
    - New locations/settings: Add to Core/world_and_characters.md with full details
@@ -157,11 +158,10 @@ For EVERY major update, I will check EACH of these files for needed updates:
 - ☐ book-memory-bank/Core/projectbrief.md - Updates to overall scope or direction
 - ☐ book-memory-bank/Core/story_structure.md - Theme, purpose, and narrative pattern developments
 - ☐ book-memory-bank/Core/world_and_characters.md - World building elements and character developments
+- ☐ Outlines/Master_Outline.md - Plot changes or confirmations
 - ☐ book-memory-bank/Style/style_guide.md - Stylistic choices emerging
 - ☐ book-memory-bank/Core/activeContext.md - ALWAYS updated with current status
 - ☐ book-memory-bank/Core/progress.md - Updated completion status
-
-Note: Master outlines and chapter outlines are stored in root directories (Outlines/) and are actual content, not memory bank files.
 
 ## Additional Automatic Features
 
