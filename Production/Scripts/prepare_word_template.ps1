@@ -3,7 +3,8 @@
 # Pandoc will use when converting markdown to DOCX format
 
 # Configuration variables - modify for your specific styling needs
-$templateFile = "reference.docx"  # Output template file
+$scriptDir = $PSScriptRoot
+$templateFile = Join-Path -Path $scriptDir -ChildPath "reference.docx"  # Output template file
 $fontFamily = "Times New Roman"  # Default body font
 $titleFont = "Georgia"  # Font for title elements
 $bodySize = 12  # Point size for body text
@@ -78,7 +79,7 @@ function Create-WordTemplate {
     $normalStyle.ParagraphFormat.LineSpacingRule = 1  # Line spacing
     $normalStyle.ParagraphFormat.LineSpacing = $lineSpacing * 12  # Convert to points
     $normalStyle.ParagraphFormat.SpaceAfter = 8
-    $normalStyle.ParagraphFormat.FirstLineIndent = 36  # 0.5 inch indent for paragraphs
+    $normalStyle.ParagraphFormat.FirstLineIndent = 0  # No indent for new paragraphs
     $normalStyle.ParagraphFormat.Alignment = 3  # Justified text (3 = wdAlignParagraphJustify)
     
     # Blockquote
@@ -131,7 +132,8 @@ function Create-WordTemplate {
     $doc.Content.Paragraphs.Last.Style = $doc.Styles.Item("Normal")
     
     # Save the document
-    $doc.SaveAs([ref]$templateFile, [ref]16) # 16 = wdFormatDocumentDefault
+    $savePath = $templateFile.ToString()
+    $doc.SaveAs($savePath, 16) # 16 = wdFormatDocumentDefault
     $doc.Close()
     $word.Quit()
     

@@ -4,9 +4,11 @@ echo Manuscript to DOCX Converter for Book Projects
 echo ===============================================
 echo.
 echo This batch file will:
-echo 1. Run the PowerShell script to combine all chapters
-echo 2. Convert the markdown file to DOCX using Pandoc
-echo 3. Open the DOCX file in Microsoft Word
+echo 1. Clean up old manuscript files
+echo 2. Create a fresh Word template with custom formatting
+echo 3. Run the PowerShell script to combine all chapters
+echo 4. Convert the markdown file to DOCX using Pandoc
+echo 5. Open the final DOCX file in Microsoft Word
 echo.
 echo Prerequisites:
 echo - Pandoc must be installed (https://pandoc.org/installing.html)
@@ -15,8 +17,15 @@ echo.
 echo Starting process...
 echo.
 
-echo Step 1: Creating Word reference template...
-powershell -ExecutionPolicy Bypass -File .\prepare_word_template.ps1
+echo Step 1: Cleaning up old files...
+if exist "%~dp0..\..\..\Complete_Manuscript.md" del "%~dp0..\..\..\Complete_Manuscript.md"
+if exist "%~dp0..\..\..\Complete_Manuscript.docx" del "%~dp0..\..\..\Complete_Manuscript.docx"
+if exist "%~dp0\reference.docx" del "%~dp0\reference.docx"
+echo Cleanup complete.
+echo.
+
+echo Step 2: Creating Word reference template...
+powershell -ExecutionPolicy Bypass -File "%~dp0\prepare_word_template.ps1"
 if %ERRORLEVEL% NEQ 0 (
     echo Error creating Word template. Please make sure Microsoft Word is installed.
     pause
@@ -25,8 +34,8 @@ if %ERRORLEVEL% NEQ 0 (
 echo Word template created successfully.
 echo.
 
-echo Step 2: Running PowerShell script to combine chapters...
-powershell -ExecutionPolicy Bypass -File .\combine_chapters.ps1
+echo Step 3: Running PowerShell script to combine chapters...
+powershell -ExecutionPolicy Bypass -File "%~dp0\combine_chapters.ps1"
 if %ERRORLEVEL% NEQ 0 (
     echo Error running PowerShell script. Please check the script and try again.
     pause
@@ -35,7 +44,7 @@ if %ERRORLEVEL% NEQ 0 (
 echo PowerShell script completed successfully.
 echo.
 
-echo Step 3: Checking if Pandoc is installed...
+echo Step 4: Checking if Pandoc is installed...
 where pandoc >nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
     echo Pandoc not found. Please install Pandoc from https://pandoc.org/installing.html
@@ -44,7 +53,7 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 echo Pandoc found. Converting markdown to DOCX...
-pandoc -s ..\Complete_Manuscript.md -o ..\Complete_Manuscript.docx --from markdown --to docx --reference-doc=reference.docx
+pandoc -s "%~dp0..\..\..\Complete_Manuscript.md" -o "%~dp0..\..\..\Complete_Manuscript.docx" --from markdown --to docx --reference-doc="%~dp0\reference.docx"
 if %ERRORLEVEL% NEQ 0 (
     echo Error converting to DOCX. Please check if Complete_Manuscript.md exists.
     pause
@@ -53,8 +62,8 @@ if %ERRORLEVEL% NEQ 0 (
 echo Conversion to DOCX completed successfully.
 echo.
 
-echo Step 4: Opening DOCX file in Microsoft Word...
-start "" "..\Complete_Manuscript.docx"
+echo Step 5: Opening DOCX file in Microsoft Word...
+start "" "%~dp0..\..\..\Complete_Manuscript.docx"
 if %ERRORLEVEL% NEQ 0 (
     echo Error opening DOCX file. Please open it manually.
 )
