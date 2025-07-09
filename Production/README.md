@@ -20,9 +20,9 @@ The `AI_Generation/cover_prompts.md` file provides structured prompts for genera
 
 Example:
 ```
-I want to generate a book cover for my science fiction novel titled "DERELICT." 
-The story involves an abandoned spaceship with ancient alien technology.
-The mood is dark, mysterious, and tense.
+I want to generate a book cover for my [genre] novel titled "[TITLE]." 
+The story involves [brief description of main elements].
+The mood is [describe the emotional tone and atmosphere].
 ```
 
 ### Publication Preparation

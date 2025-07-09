@@ -126,31 +126,6 @@ Add these keywords to modify the style of any prompt:
 - Experiment with different samplers for different styles
 - Add "masterpiece, best quality" for better outcomes
 
-## Example Cover Prompts (Based on "DERELICT")
-
-### Example 1: The Harbinger Ship
-
-```
-Professional book cover, cinematic, a massive skeletal hand-shaped alien spacecraft silhouetted against a distant amber nebula, stark against the void of space. The vessel is ancient, partially decayed, with deep matte black material that seems to absorb light. Tiny human spacecraft approaching it for scale. Desolate, foreboding atmosphere. Ultradetailed, haunting, deep shadows, eerie blue accent lighting along spacecraft contours. Title area at top, author area at bottom. Sci-fi horror aesthetic like Event Horizon. Hyper-realistic, 8K, volumetric lighting.
-```
-
-### Example 2: SENTINEL Interface
-
-```
-Professional book cover, cinematic, looking through a fractured blue holographic interface covered in alien glyphs and percentage calculations. Beyond the interface is a dark corridor of an alien ship with organic-mechanical components that resemble a ribcage. A single human silhouette stands alone in the distance. Cold blue lighting with red warning indicators. Ultradetailed, sinister atmosphere, data visualization elements. Title area at top, author area at bottom. Sci-fi horror aesthetic like Alien. Hyper-realistic, 8K, volumetric lighting.
-```
-
-### Example 3: Integration Chamber
-
-```
-Professional book cover, cinematic, a high-tech alien chamber with a central pod/capsule that's part mechanical, part organic. The pod has neural interface cables suspended from above. Eerie blue light emanates from within the pod. Dark metallic surfaces reflecting minimal light. The chamber has strange symbols etched into walls. Ultradetailed, ominous atmosphere, cold sterile environment with shadows. Title area at top, author area at bottom. Sci-fi horror aesthetic like Prometheus. Hyper-realistic, 8K, volumetric lighting.
-```
-
-### Example 4: Minimalist Approach
-
-```
-Professional book cover, minimalist, a single glowing blue neural interface implant against absolute black. The implant has circuit-like patterns extending outward like corruption spreading. Clean, high-contrast design with extreme negative space. Small silhouette of a hand-shaped spacecraft barely visible within the blue glow. Elegant, unsettling simplicity. Title area at top (large), author area at bottom. Contemporary sci-fi aesthetic like Ex Machina. Sharp vector-like quality, perfect for book cover.
-```
 
 ## Additional Tips
 
