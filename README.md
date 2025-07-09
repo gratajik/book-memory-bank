@@ -17,7 +17,7 @@ The Book Memory Bank is designed to solve a key challenge when writing books wit
 
 1. **Set up the Project Structure**:
    - Copy the book-memory-bank folder to your project directory
-   - Create .clinerules directory file with content from custom_instructions.md
+   - Create .clinerules directory in the root with content from custom_instructions.md
    - Inside of .clinerules directory, copy the memory-bank.md from this directory to that one
    - Inside of .clinerules directory, copy the author-rules.md from this directory to that one
 
