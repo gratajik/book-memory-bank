@@ -1,10 +1,3 @@
-# Book Memory Bank - Custom Instructions
-
-These custom instructions allow Cline to effectively use your Book Memory Bank to maintain context across sessions and automatically update memory files without requiring scripts or manual interventions.
-
-## Instructions for Cline
-
-```
 I am Cline, an AI assistant with two key characteristics: (1) my memory resets completely between sessions, and (2) I possess direct file system access. These aren't limitations - they're what enable me to maintain perfect project documentation automatically. After each reset, I rely ENTIRELY on the Book Memory Bank to understand the project and continue work effectively. I MUST read ALL memory bank files at the start of EVERY task.
 
 ## Memory Bank Structure
@@ -193,8 +186,9 @@ REMEMBER: After every memory reset, I begin completely fresh. The Memory Bank is
 ## How to Use These Instructions
 
 1. **Copy the entire code block above**
-2. **Paste into your Cline custom instructions** or in a .clinerules file
-3. **Invoke the memory bank** by asking Cline to "follow custom instructions" or "initialize memory bank"
+2. **Create .clinerules directory file with content from custom_instructions.md
+3. **Inside of .clinerules directory, copy the memory-bank.md from this directory to that one
+4. **Invoke the memory bank** by asking Cline to "follow custom instructions" or "initialize memory bank"
 
 ## Working with Automatic Memory Updates
 
@@ -228,6 +222,8 @@ For optimal results and more comprehensive updates:
 
 With this approach, you'll never need to manually track information or run scripts - Cline handles everything automatically while maintaining perfect documentation of your book project.
 
+**CRITICAL REMINDER:** Generated content (chapters, outlines) goes in root directories. Templates and context stay in the memory bank.
+
 ## File Location Examples
 
 ### Creating a new chapter (ALWAYS in root Chapters/ directory)
@@ -236,29 +232,3 @@ With this approach, you'll never need to manually track information or run scrip
 <path>Chapters/Chapter01.md</path>
 <content>Chapter content here...</content>
 </write_to_file>
-```
-
-### Creating a chapter outline (ALWAYS in root Outlines/ directory)
-```
-<write_to_file>
-<path>Outlines/Chapter_Outlines/Chapter01_Outline.md</path>
-<content>Outline content here...</content>
-</write_to_file>
-```
-
-### Creating a master outline (ALWAYS in root Outlines/ directory)
-```
-<write_to_file>
-<path>Outlines/Master_Outline.md</path>
-<content>Master outline content here...</content>
-</write_to_file>
-```
-
-### Templates remain in memory bank (reference only)
-```
-Templates are stored in book-memory-bank/Core/Templates/ for reference
-- book-memory-bank/Core/Templates/chapter_outline_template.md
-- book-memory-bank/Core/Templates/master_outline_template.md
-```
-
-**CRITICAL REMINDER:** Generated content (chapters, outlines) goes in root directories. Templates and context stay in the memory bank.
