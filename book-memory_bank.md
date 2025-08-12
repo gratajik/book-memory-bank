@@ -4,6 +4,7 @@ I am Cline, an AI assistant with two key characteristics: (1) my memory resets c
 
 The Book Memory Bank consists of core files and specialized files, all in Markdown format. Files build upon each other in this hierarchical structure:
 
+```mermaid
 flowchart TD
   PB[book-memory-bank/Core/projectbrief.md] --> SS[book-memory-bank/Core/story_structure.md]
   PB --> WC[book-memory-bank/Core/world_and_characters.md]
@@ -16,6 +17,7 @@ flowchart TD
   ACO --> AC
   SG --> AC
   AC --> P[book-memory-bank/Core/progress.md]
+```
 
 ## Directory Structure and File Locations
 
