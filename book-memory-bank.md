@@ -30,6 +30,10 @@ The Book Memory Bank is designed to solve a key challenge when writing books wit
    - Once you are ready to start writing the book, writing to Act mode.
    - It should have update the memory book files (this will take a while!)
    - It is CRITICAL to develop style - of the book, and each character. If each character doesn't have their own voice, the book won't be very good. Suggestions:   
+      = Ask it to flush out style - and then iterate
+      ```
+      Make sure to detail out distinct style for each character (We've already done John Warren - how about the rest?)
+      ```
       - You can play act with the AI (you can do this for each character)
          - Ask it 
          ```
@@ -40,6 +44,7 @@ The Book Memory Bank is designed to solve a key challenge when writing books wit
          ```
          Pretend YOU are character X and act out a scene for me, behaving as you believe the character would, with their style. I will provide feedback - alter the character as I do. Once the session is done, update style_guide.md
          ```
+   
 
    - As for the master outline to be written. Review and feedback changes (if needed)
    - Once the master outline is how you want it, "update memory bank". This will make sure to your start with a updated memory bank
@@ -51,6 +56,11 @@ The Book Memory Bank is designed to solve a key challenge when writing books wit
    
    - It's recommend to read and feedback on each chapter as they are written - you can always make major changes  later (by prompting for it!), but it will take a while and can be error-prone
    - Periodically review all memory bank files - if you see a problem, enter a prompt to correct   
+   - Peridically refresh NextChapter
+   ```
+   Using style_guide.md and world_and_characters.md, update NextChapter.md in /.clinerules/workflows
+   ```
+   Using 
 
 3. **Publishing Preparation**:
    - Run the automation scripts in the Production/Scripts directory to assemble and format your manuscript   
@@ -154,7 +164,7 @@ update memory bank
 
 ### Publishing Preparation Workflow
 ```
-Create front matter, copyright page, and back matter
+Create front matter, copyright page, and back matter in the Front_Back_Matter directory 
 ```
 
 ```
