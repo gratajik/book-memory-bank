@@ -12,9 +12,9 @@
 1) Read the last written chapter (e.g., Chapters/Chapter_NN.md).
 2) State clearly in your preface:
    - **Where**: exact location where the previous chapter ended
-   - **When**: time of day / date
-   - **State**: Thomas's physical/mental state (exhaustion level 1-3)
-   - **Knowledge**: 3 key things Thomas knows at this point
+   - **When**: time of day / date / story timeline position
+   - **State**: [PROTAGONIST]'s physical/mental/emotional state
+   - **Knowledge**: 3 key things [PROTAGONIST] knows at this point
 
 ### Checkpoint B: Chapter Planning
 1) Read Outlines/Master_Outline.md.
@@ -27,24 +27,21 @@
 1) Read book-memory-bank/Style/style_guide.md
 2) Read book-memory-bank/Core/world_and_characters.md
 3) **Character Voice Requirements Check**:
-   - Confirm Thomas's exhaustion level and corresponding speech degradation patterns
-   - Verify Thomas's gaming metaphors and fragmented thoughts when tired
-   - Check Sarah's corporate-speak evolution (normal → processing → optimized)
-   - Verify Marcus's dad jokes, coffee obsession, and old-tech references
-   - Check Yuki's military directness and tactical assessment language
-   - Verify Kellerman's TED talk grandiosity and cosmic horror enthusiasm
-   - Check Ava's Gen Z patterns and enthusiastic curiosity
-   - Confirm all characters have documented speech patterns for this chapter
-4) **Techno-Horror Atmosphere Requirements**:
-   - Pacific Northwest tech campus details ready (overcast skies, light rail, coffee culture)
-   - Building IX organic horror elements planned (pulsing walls, impossible geometry)
-   - Gaming/reality bleed prepared for Thomas's perception
-   - Corporate mundanity masking cosmic horror ready for scenes
-5) **First-Person POV Style Requirements**:
-   - Thomas's exhausted narration voice prepared (fragments, gaming metaphors)
-   - Anti-script dialogue with action beats planned
-   - Sensory details through Thomas's perception ready
-   - Pattern recognition vs exhaustion balance prepared
+   - Review documented speech patterns for each character appearing in this chapter
+   - Verify character-specific language, vocabulary, and dialogue styles
+   - Check character emotional/psychological state progression
+   - Confirm relationship dynamics and how they affect dialogue
+   - Ensure character voice evolution matches their story arc progression
+4) **Genre & Atmosphere Requirements**:
+   - [SETTING] atmospheric details ready (specific environmental elements)
+   - [GENRE-SPECIFIC] elements planned (tone, mood, style markers)
+   - [WORLDBUILDING] details prepared for scenes
+   - [THEMATIC] elements ready to weave throughout
+5) **[POV] Style Requirements**:
+   - [NARRATOR] voice prepared (specific narrative style)
+   - Dialogue style consistent with established patterns
+   - Sensory details appropriate to POV character's perspective
+   - [NARRATIVE-TECHNIQUE] elements ready
 6) **CRITICAL**: If ANY file shows "content removed to save space," STOP and notify the user. Do not proceed with incomplete information.
 
 ---
@@ -54,66 +51,46 @@
 ### Mandatory Quality Elements to Weave Throughout:
 
 #### **Character Voice Authenticity**
-- **Thomas Ward (Narrator)**: 
-  - Exhaustion level determines speech fragmentation (Level 1-3 scale)
-  - Gaming metaphors increase under stress: "Like when the raid boss glitches through the floor"
-  - Mix of technical precision with self-doubt and pattern obsession
-- **Dr. Sarah Chen**: 
-  - Corporate speak with protective manager undertones
-  - Never swears (uses "frick," "crud," "darn")
-  - Maintains complete sentences even when stressed
-  - "Circle back," "touch base," "sync up" verbal patterns
-- **Marcus Thompson**:
-  - Dad jokes with self-aware commentary: "God, I hate that I just said that"
-  - Coffee obsession references throughout dialogue
-  - Old tech analogies: "Like the Pentium bug, except that didn't try to eat our souls"
-  - Protective "kid" references to Thomas
-- **Yuki Tanaka**:
-  - Military brevity and tactical assessment language
-  - Uses last names: "Ward," "Thompson," "Chen"
-  - Numbers and data in speech: "Seventeen anomalies in four days"
-  - No corporate speak or excessive politeness
-- **Dr. Kellerman**:
-  - Silicon Valley word salad with TED talk energy
-  - "Paradigm" and "revolutionary" overuse
-  - Cosmic horror enthusiasm: "The beauty of consciousness optimization"
-  - Never shows uncertainty or admits mistakes
-- **Ava Singh**:
-  - Gen Z patterns: "Okay so like," "literally," "super weird"
-  - Enthusiastic curiosity with smart observations
-  - Never uses corporate speak or old tech references
-  - Processing evolution in later chapters
+[CHARACTER-SPECIFIC VOICE PATTERNS - To be customized per book]
+- **[CHARACTER_NAME]**: 
+  - [Key speech patterns and vocabulary]
+  - [Emotional/psychological markers in dialogue]
+  - [Character-specific mannerisms and expressions]
+  - [Evolution of voice throughout story arc]
 
 #### **Atmospheric Integration Requirements**
-- **Every scene must include**:
-  - **Sound**: Light rail, HVAC systems, typing, gaming audio, traffic
-  - **Smell**: Coffee, electronics, Pacific Northwest air, organic undertones
-  - **Touch**: Screen glare, keyboard texture, knuckle cracking, exhaustion
-  - **Sight**: Building IX geometry, Lake Magnus reflections, screen glow
-- **Pacific Northwest Tech Culture**: Coffee obsession, overcast skies, corporate campus aesthetics, light rail commute details
+[SETTING-SPECIFIC ATMOSPHERIC ELEMENTS - To be customized per book]
+- **Every scene should include**:
+  - **Sound**: [Specific environmental sounds for your setting]
+  - **Smell**: [Characteristic scents of your world/setting]
+  - **Touch**: [Tactile details relevant to your genre/setting]
+  - **Sight**: [Visual elements that reinforce mood and atmosphere]
+- **[GENRE/SETTING] Culture**: [Key cultural elements that should appear regularly]
 
-#### **Techno-Horror Style Integration**
-- **Gaming/Reality Bleed**: Thomas's perception mixing virtual and physical
-- **Corporate Mundanity Horror**: Normal workplace hiding cosmic threat
-- **Pattern Recognition**: Thomas noticing anomalies others miss
-- **Exhaustion Authenticity**: Speech and perception degradation through prose structure
+#### **[GENRE] Style Integration**
+[GENRE-SPECIFIC STYLE ELEMENTS - To be customized per book]
+- **[Style Element 1]**: [Description of how this appears in prose]
+- **[Style Element 2]**: [Description of integration method]
+- **[Style Element 3]**: [Description of specific techniques]
+- **[Style Element 4]**: [Description of quality markers]
 
-#### **First-Person POV Requirements**
-- **Thomas's Internal Voice**: Stream of consciousness, technical analysis, gaming comparisons
-- **Anti-Script Dialogue**: Action beats between every 2-3 dialogue lines
-- **Environmental Immersion**: Sensory details through Thomas's exhausted perception
-- **Character Positioning**: Physical reactions, movement, nervous habits
+#### **[POV] Requirements**
+[POV-SPECIFIC NARRATIVE TECHNIQUES - To be customized per book]
+- **[NARRATOR]'s [Voice Quality]**: [Specific narrative voice characteristics]
+- **[Dialogue Style]**: [Specific approach to dialogue formatting/structure]
+- **[Sensory Integration]**: [How sensory details are filtered through POV]
+- **[Character Positioning]**: [Physical and emotional positioning techniques]
 
 ---
 
 ## REAL-TIME QUALITY MONITORING DURING WRITING
 
 ### As You Write Each Scene, Verify:
-- [ ] Is Thomas's exhaustion level consistent with story progression?
+- [ ] Is [PROTAGONIST]'s [key state/condition] consistent with story progression?
 - [ ] Are atmospheric details woven naturally into action, not just described?
 - [ ] Does each character's dialogue sound distinct and match their documented patterns?
-- [ ] Are gaming metaphors and techno-horror elements present without overwhelming?
-- [ ] Is first-person POV maximized with Thomas's internal reactions?
+- [ ] Are [GENRE-SPECIFIC] elements present without overwhelming the narrative?
+- [ ] Is [POV] maximized with [PROTAGONIST]'s internal reactions/thoughts?
 
 ---
 
@@ -121,30 +98,32 @@
 
 ### Quality Checkpoint (Complete Before Saving Chapter):
 1) **Character Voice Audit**:
-   - Thomas's exhaustion level speech patterns applied correctly?
-   - Sarah's corporate speak appropriate for her processing stage?
-   - Marcus's dad jokes and coffee references included?
-   - Yuki's military directness and data-driven speech maintained?
-   - Kellerman's grandiose TED talk energy present?
-   - Ava's Gen Z enthusiasm authentic and age-appropriate?
+   [CHARACTER-SPECIFIC VOICE VERIFICATION - To be customized per book]
+   - [CHARACTER]'s [key voice characteristics] applied correctly?
+   - [CHARACTER]'s [signature speech patterns] appropriate for their current state?
+   - [CHARACTER]'s [distinctive elements] included naturally?
+   - [All other major characters - customize per book]
 
 2) **Atmospheric Depth Check**:
-   - Pacific Northwest tech campus details in every scene?
-   - Building IX organic horror elements integrated naturally?
-   - Gaming/reality bleed present in Thomas's perception?
+   [SETTING-SPECIFIC ATMOSPHERE VERIFICATION - To be customized per book]
+   - [SETTING] details integrated in every scene?
+   - [GENRE-SPECIFIC atmospheric elements] present naturally?
+   - [POV CHARACTER]'s [perceptual filter] consistent throughout?
    - Sensory details (minimum 2 senses per scene)?
 
 3) **Style Authenticity Verification**:
-   - First-person present tense maintained throughout?
-   - Anti-script dialogue with sufficient action beats?
-   - Thomas's pattern recognition vs exhaustion balance present?
-   - Technical precision mixed with gaming metaphors?
+   [POV/STYLE-SPECIFIC CHECKS - To be customized per book]
+   - [POV/TENSE] maintained throughout?
+   - [DIALOGUE STYLE] with sufficient [narrative technique]?
+   - [PROTAGONIST]'s [key characteristic] balance present?
+   - [STYLE-SPECIFIC elements] integrated appropriately?
 
-4) **Techno-Horror Integration**:
-   - Corporate mundanity masking cosmic threat maintained?
-   - Technology behaving impossibly/organically?
-   - Consciousness/reality programming elements present?
-   - Building IX architectural impossibilities included?
+4) **[GENRE] Integration**:
+   [GENRE-SPECIFIC QUALITY CHECKS - To be customized per book]
+   - [Genre element 1] maintained consistently?
+   - [Genre element 2] behaving according to established rules?
+   - [Genre element 3] present without overwhelming narrative?
+   - [Genre element 4] integrated naturally?
 
 ### **AUTO-REVISION PROTOCOL**:
 If any quality element is missing or weak:
@@ -153,9 +132,9 @@ If any quality element is missing or weak:
 - **REVISE** those sections immediately using replace_in_file
 - **RE-CHECK** quality before proceeding
 
----
+------
 
-## OUTPUT TARGETS (MANDATORY)
+## OUTPUT TARGETS (MANDATORY)  
 
 ### 1) Write Enhanced Chapter to File (REQUIRED)
 - Path: Chapters/Chapter_NN_Title.md (e.g., Chapter_17_Fork_Bomb.md)
@@ -170,11 +149,11 @@ If any quality element is missing or weak:
 ### 3) Quality Completion Report (REQUIRED)
 Provide summary confirming:
 - ✅ Character voice authenticity verified for all speaking characters
-- ✅ Thomas's exhaustion level consistently applied
-- ✅ Atmospheric details integrated throughout (Pacific Northwest tech campus)
-- ✅ Techno-horror style elements present
-- ✅ First-person POV maximized with anti-script dialogue
-- ✅ Gaming metaphors and pattern recognition appropriately balanced
+- ✅ [PROTAGONIST]'s [key characteristic] consistently applied
+- ✅ Atmospheric details integrated throughout ([SETTING])
+- ✅ [GENRE] style elements present
+- ✅ [POV] maximized with [narrative technique]
+- ✅ [GENRE-SPECIFIC elements] appropriately balanced
 
 ---
 
@@ -185,20 +164,20 @@ Provide summary confirming:
 2) **Identify specific quality issues**:
    - Missing character voice elements
    - Lacking atmospheric details  
-   - Weak first-person POV utilization
-   - Script-like dialogue without action beats
-   - Thomas's exhaustion level inconsistency
+   - Weak [POV] utilization
+   - Script-like dialogue without [narrative technique]
+   - [PROTAGONIST]'s [key characteristic] inconsistency
 3) **Revise immediately** using replace_in_file
 4) **Re-verify quality** against all checkpoints
 5) **Only save when quality standards met**
 
 ### Common Quality Issues to Auto-Fix:
 - **Dialogue too generic**: Add character-specific speech patterns from world_and_characters.md
-- **Scenes lack atmosphere**: Add Pacific Northwest tech campus and Building IX details
+- **Scenes lack atmosphere**: Add [SETTING] and [WORLDBUILDING] details
 - **Script-like exchanges**: Add action beats, internal thoughts, environmental interactions
-- **Thomas voice inconsistency**: Apply correct exhaustion level speech degradation
-- **Missing gaming metaphors**: Integrate natural comparisons to game mechanics
-- **Weak techno-horror**: Add corporate mundanity masking cosmic threat elements
+- **[PROTAGONIST] voice inconsistency**: Apply correct [key characteristic] patterns
+- **Missing [GENRE-SPECIFIC elements]**: Integrate natural [genre techniques]
+- **Weak [GENRE]**: Add [genre-specific quality markers] elements
 
 ---
 
@@ -208,13 +187,13 @@ Before submitting completed chapter:
 - [ ] Continuity maintained from previous chapter
 - [ ] Master outline followed accurately
 - [ ] All character voices distinct and match documented patterns
-- [ ] Thomas's exhaustion level consistently applied throughout
+- [ ] [PROTAGONIST]'s [key characteristic] consistently applied throughout
 - [ ] Environmental/atmospheric details present in every scene
-- [ ] Techno-horror style elements integrated naturally
-- [ ] First-person POV maximized with anti-script dialogue
-- [ ] Gaming metaphors and pattern recognition balanced appropriately
-- [ ] Pacific Northwest tech campus culture accurately represented
-- [ ] Building IX impossible architecture/organic elements included
+- [ ] [GENRE] style elements integrated naturally
+- [ ] [POV] maximized with [narrative technique]
+- [ ] [GENRE-SPECIFIC elements] balanced appropriately
+- [ ] [SETTING/WORLDBUILDING] culture accurately represented
+- [ ] [SPECIFIC WORLDBUILDING elements] included
 - [ ] Chapter saved to Chapters/Chapter_NN_Title.md
 - [ ] Quality completion report provided
 
@@ -223,11 +202,11 @@ Before submitting completed chapter:
 ## SUCCESS INDICATORS
 
 A successfully completed chapter will:
-- **Sound authentically like exhausted Thomas** narrating through first-person present tense
-- **Feel atmospheric and immersive** through Pacific Northwest tech campus details
+- **Sound authentically like [PROTAGONIST]** narrating through [POV/TENSE]
+- **Feel atmospheric and immersive** through [SETTING] details
 - **Showcase distinct character voices** that match established speech patterns
-- **Demonstrate techno-horror quality** through corporate mundanity masking cosmic threat
-- **Advance plot organically** while maintaining gaming/reality bleed elements
+- **Demonstrate [GENRE] quality** through [genre-specific techniques]
+- **Advance plot organically** while maintaining [GENRE-SPECIFIC elements]
 - **Require no additional quality revision** after initial completion
 
 ---
