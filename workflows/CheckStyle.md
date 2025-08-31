@@ -1,0 +1,1 @@
+Read the last chapter.  I would like to improve the quality of the writing. Read your style guide for over all style, and world and characters to make sure characters are speaking correctly.

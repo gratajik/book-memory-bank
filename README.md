@@ -2,6 +2,8 @@
 
 A structured documentation system for maintaining context and consistency throughout the book writing process. This memory bank helps writers work with LLM assistants by providing a persistently updated knowledge base that enables a stateless AI to maintain full context across writing sessions.
 
+NOTE: This was last tested with Opus 4.1. Different models may behave differently. 
+
 ## Overview
 
 The Book Memory Bank is designed to solve a key challenge when writing books with AI assistance: maintaining consistent context. It consists of:
@@ -15,41 +17,37 @@ The Book Memory Bank is designed to solve a key challenge when writing books wit
 
 ## Getting Started
 
-1. **Set up the Project Structure**:
+1. **Start Your Project**: 
    - Copy the book-memory-bank folder to your project directory
-   - Create .clinerules directory in the root with content from custom_instructions.md
-   - Inside of .clinerules directory, copy the memory-bank.md from this directory to that one
-   - Inside of .clinerules directory, copy the author-rules.md from this directory to that one
-
-2. **Configure AI Assistant**:
-   - Copy the contents of custom_instructions.md to your LLM's custom instructions
-   - Ensure file paths in custom instructions include "book-memory-bank/" prefix
    - Open VSCode in your main project directory
-
-3. **Start Your Project**:
    - Begin in Plan Mode to establish basic story elements   
    - Describe what you want to write. Make the first line meaningful, as that's what will show up in Clines history. 
    - Add detail - at any level you want. You can start with a basic description and then iterate - or add as much detail as you want. This might include main character(s), 1st or 3rd perspective, tone, plot points, locations, et al.  It's recommend to set the over all style of the book. For example, "Write this book in the style of Ernest Hemingway" - or "Write this book with a style of minimalist and direct, using simple language, short sentences, and subtle implication to convey deep meaning through action and dialogue" (which somewhat equates to how Hemingway wrote)
    - Answer any questions given to you.
-   - Enter in the prompt "initialize memory bank". This will get the memory bank read 
+   - Prompt  `Setup the Project Structure (.clinerules directory)`. This will create the .clinerules (and files)
+   - Enter in the prompt  `initialize memory bank`.
 
-4. **Writing Process**:
+2. **Writing Process**:
    - Once you are ready to start writing the book, writing to Act mode.
-   - It will likely write some. 
-   - Tell Cline to "update memory bank".  This should fully create the memory bank files - characters, locations, plots, etc.  
+   - It should have update the memory book files (this will take a while!)
+   - It is CRITICAL to develop the sytle - of the book, and each character. If each character doesn't have their own voice, the book won't be very good. Suggestions:
+   - Ask the AI to make sure to develop the style of each character, update style_guide.md
+   - You can play act with the AI (you can do this for each character)
+      - Ask it "Pretend I am character X. Interview me to get to know me better. Ask follow up questions, until you feel like you really know me or I say I'm done".  Update style_guide.md with what you learned. Update style_guide.md with what you learned. 
+      - Ask it"Pretend YOU are character X and act out a scene for me, behaving as you believe the character would, with their style. I will provide feedback - alter the character as I do. Once the session is done, update style_guide.md
+
    - As for the master outline to be written. Review and feedback changes (if needed)
    - Once the master outline is how you want it, "update memory bank". This will make sure to your start with a updated memory bank
    - You can iterate how you want at this point. The pattern that seems to work the best:
-      1.  Ask to "Write chapter 1 outline" (or just "Write the next chapter outline).
-      2.  Review and feedback changes
-      3.  Ask to "Write chapter 1" (or just "Write the next chapter).
+      1.  `/NextChapter`   (NOTE: If it has problems running this, use `Run /NextChapter`)      
       4.  Review and feedback changes
-      5.  Update memory bank
+      5.  `/UpdateMemoryBank`
       6.  Repeat until the book is complete
-   - It's recommend to read and feedback on each chapter as they are written - you can always make major chnages later (by prompting for it!), but it will take a while and can be error-prone
-   - Periodically review all memoiry bank files - if you see a problem, enter a prompt to correct   
+   
+   - It's recommend to read and feedback on each chapter as they are written - you can always make major changes  later (by prompting for it!), but it will take a while and can be error-prone
+   - Periodically review all memory bank files - if you see a problem, enter a prompt to correct   
 
-5. **Publishing Preparation**:
+3. **Publishing Preparation**:
    - Run the automation scripts in the Production/Scripts directory to assemble and format your manuscript   
 
 ## Complete Project Structure
@@ -58,9 +56,14 @@ The recommended project structure separates the memory bank (metadata and contex
 
 ```
 YourBookProject/              # Root project directory
-├── .clinerules                # Cline rules
+├── .clinerules/               # Cline rules
 ├── └── book-memory-bank.md    # Cline rules for book-memory
 ├── └── author-rules.md        # Cline rules to behave like a human author
+├── └── workflows              # Common workflows
+├── └── └── NextChatper.md     # Main driver to create new chapters
+├── └── └── UpdateMemoryBank.md # Helper to update memory bank
+├── └── └── CheckStyle.md      # If NextChapter isn't doing well with style, run this AFTER a chapter is written
+├── └── └── AutoUpdate_NextChapter.md # NextChapter must be updated with book-specific info to pick up style correctly. This should auto happen - if not, run this
 ├── Chapters/                  # ACTUAL chapter files
 │   └── Chapter01.md
 │   └── Chapter02.md
