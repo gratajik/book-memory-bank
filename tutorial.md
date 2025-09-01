@@ -46,11 +46,10 @@ The system includes several key files:
 4. Create master outline (28 chapters in this example)
 
 #### Writing Phase (Act Mode):
-1. Write chapter outlines one at a time
-2. Write the actual chapter based on the outline
-3. Update memory bank after each chapter
-4. Review for consistency and style
-5. Repeat for all chapters
+1. Write the chapters, based on memory bank and the master outline (use /NextChapter)
+2. Update memory bank after each chapter
+3. Review for consistency and style
+4. Repeat for all chapters
 
 ### 4. **Character Development Techniques**
 Greg demonstrates two innovative approaches:
