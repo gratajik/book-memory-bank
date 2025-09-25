@@ -1,1 +1,1 @@
-Read the last chapter.  I would like to improve the quality of the writing. Read your style guide for over all style, and world and characters to make sure characters are speaking correctly.
+Analyze the last written chapter with the goal of elevating the writing quality. Cross-check with the style guide to preserve overall style, maintain world consistency, and ensure each character’s voice and dialogue remain accurate to their established personalities.

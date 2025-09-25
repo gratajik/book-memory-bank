@@ -1,0 +1,1 @@
+I will be publishing my book in eBook, paperback, and hardcover formats. Generate seven unique prompts for designing high-quality covers that align with the book’s content and themes. If the author’s name has not been specified, prompt me to provide it and update it here as well as in all relevant files
